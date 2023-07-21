@@ -1,6 +1,6 @@
 // Footer.js
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -56,8 +56,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <Link
-                  to="/products"
+                <a
+                  href="/products"
                   style={{
                     color: "white",
                     textDecoration: "none",
@@ -65,7 +65,7 @@ const Footer = () => {
                   }}
                 >
                   Products
-                </Link>
+                </a>
               </li>
               <li>
                 <a

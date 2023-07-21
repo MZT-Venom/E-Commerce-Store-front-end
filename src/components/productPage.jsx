@@ -1,14 +1,17 @@
+// HomePage.js (or App.js)
 
 import React, { useEffect, useState } from "react";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import axios from "axios";
 import Navbar from "./nav.jsx";
 // import Carousel from "./crousel.jsx";
 import PreviousProducts from "./products.jsx";
 import ProductCard from "./productCard.jsx";
 import Footer from "./footer.jsx";
+import "./index.css"; // Import the CSS file
 
-export default function productPage() {
-    const [data, setData] = useState([]);
+const ProductPage = () => {
+  const [data, setData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -22,11 +25,14 @@ export default function productPage() {
     };
     fetchData();
   }, []);
+
   return (
     <div>
-        <Navbar/>
-        <PreviousProducts/>
-         {/* Products */}
+      <Navbar />
+      {/* <Carousel /> */}
+      <PreviousProducts />
+
+      {/* Products */}
       <div className="row row-cols-4 g-4" style={{ margin: "40px" }}>
         {data.map((product) => (
           <ProductCard
@@ -41,6 +47,10 @@ export default function productPage() {
       </div>
 
       <Footer />
+
+      {/* Add other sections and components here as needed */}
     </div>
-  )
-}
+  );
+};
+
+export default ProductPage;
