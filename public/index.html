@@ -59,17 +59,20 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
-    <script>const fetch = require('node-fetch');
+    <script>
+      const fetch = require("node-fetch");
 
-      const url = 'https://sephora.p.rapidapi.com/v2/auto-complete?query=eyeshadows&country=SG&language=en-SG';
+      const url =
+        "https://sephora.p.rapidapi.com/v2/auto-complete?query=eyeshadows&country=SG&language=en-SG";
       const options = {
-        method: 'GET',
+        method: "GET",
         headers: {
-          'X-RapidAPI-Key': 'c9d4828a8dmshc6d05e52f76f63bp1c0f14jsn4afd5a45472c',
-          'X-RapidAPI-Host': 'sephora.p.rapidapi.com'
-        }
+          "X-RapidAPI-Key":
+            "c9d4828a8dmshc6d05e52f76f63bp1c0f14jsn4afd5a45472c",
+          "X-RapidAPI-Host": "sephora.p.rapidapi.com",
+        },
       };
-      
+
       try {
         const response = await fetch(url, options);
         const result = await response.text();
@@ -77,6 +80,6 @@
       } catch (error) {
         console.error(error);
       }
-      </script>
+    </script>
   </body>
 </html>

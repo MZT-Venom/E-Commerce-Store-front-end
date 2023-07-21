@@ -13,7 +13,7 @@ const PreviousProducts = () => {
           fontWeight: "bold",
         }}
       >
-        Previous Products
+        Our Recent Products
       </h2>
     </div>
   );

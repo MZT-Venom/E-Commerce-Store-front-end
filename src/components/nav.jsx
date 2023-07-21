@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -49,13 +50,13 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a
+              <Link
+                to="/products"
                 className="nav-link"
-                href="/products"
                 style={{ color: "white", fontFamily: "bahnschrift" }}
               >
                 Products
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a
