@@ -1,0 +1,38 @@
+body {
+  overflow-x: hidden;
+}
+
+/* Navbar Brand Logo */
+.navbar-brand-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-family: bahnschrift;
+}
+
+/* Navbar Buttons */
+.navbar .btn {
+  font-family: bahnschrift;
+}
+
+/* Active Nav Link */
+.nav-link.active {
+  font-weight: bold;
+}
+
+/* Footer Links */
+footer ul.list-unstyled li a {
+  color: white;
+  text-decoration: none;
+  font-family: bahnschrift;
+}
+
+/* Footer Bottom */
+footer div.text-center {
+  background-color: #0f0d3d;
+  color: white;
+}
