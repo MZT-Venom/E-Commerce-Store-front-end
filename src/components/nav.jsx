@@ -78,7 +78,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <a className="nav-link" href="/signup">
+          <Link className="nav-link" to="/register">
             <button
               className="btn btn-outline-light"
               style={{
@@ -90,19 +90,19 @@ const Navbar = () => {
             >
               Register
             </button>
-          </a>
-          <a className="nav-link" href="/login">
-            <button
-              className="btn btn-outline-light"
-              style={{
-                fontFamily: "bahnschrift",
-                marginTop: "10px",
-                marginBottom: "10px",
-              }}
-            >
-              Login
-            </button>
-          </a>
+          </Link>
+          <Link to="/login">
+      <button
+        className="btn btn-outline-light"
+        style={{
+          fontFamily: "bahnschrift",
+          marginTop: "10px",
+          marginBottom: "10px",
+        }}
+      >
+        Login
+      </button>
+    </Link>
         </div>
       </div>
     </nav>
