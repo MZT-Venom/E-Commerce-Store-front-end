@@ -30,7 +30,7 @@ const ProductPage = () => {
     <div>
       <Navbar />
       {/* <Carousel /> */}
-      <PreviousProducts />
+      <PreviousProducts str="Our Recent Products"/>
 
       {/* Products */}
       <div className="row row-cols-4 g-4" style={{ margin: "40px" }}>

@@ -1,7 +1,7 @@
 // Products.js
 import React from "react";
 
-const PreviousProducts = () => {
+const PreviousProducts = ({str}) => {
   return (
     <div>
       <h2
@@ -13,7 +13,7 @@ const PreviousProducts = () => {
           fontWeight: "bold",
         }}
       >
-        Our Recent Products
+        {str}
       </h2>
     </div>
   );

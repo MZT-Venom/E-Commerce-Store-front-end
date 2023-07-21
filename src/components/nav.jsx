@@ -59,22 +59,22 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
+                to="/cart"
                 className="nav-link"
-                href="/cart"
                 style={{ color: "white", fontFamily: "bahnschrift" }}
               >
                 Cart
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
+                to="/contactus"
                 className="nav-link"
-                href="/contactus"
                 style={{ color: "white", fontFamily: "bahnschrift" }}
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
 

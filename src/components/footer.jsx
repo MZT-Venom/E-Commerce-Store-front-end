@@ -1,5 +1,6 @@
 // Footer.js
 import React from "react";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -44,8 +45,8 @@ const Footer = () => {
 
             <ul className="list-unstyled">
               <li>
-                <a
-                  href="index.html"
+                <Link
+                  to="/"
                   style={{
                     color: "white",
                     textDecoration: "none",
@@ -53,11 +54,11 @@ const Footer = () => {
                   }}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/products"
+                <Link
+                  to="/products"
                   style={{
                     color: "white",
                     textDecoration: "none",
@@ -65,11 +66,11 @@ const Footer = () => {
                   }}
                 >
                   Products
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="cart.html"
+                <Link
+                  to="/cart"
                   style={{
                     color: "white",
                     textDecoration: "none",
@@ -77,11 +78,11 @@ const Footer = () => {
                   }}
                 >
                   Cart
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="contactus.html"
+                <Link
+                  to="/contactus"
                   style={{
                     color: "white",
                     textDecoration: "none",
@@ -89,7 +90,7 @@ const Footer = () => {
                   }}
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
